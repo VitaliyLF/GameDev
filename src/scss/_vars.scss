@@ -5,10 +5,14 @@
   --font-family: "Gilroy", sans-serif;
   --second-family: "Roboto", sans-serif;
   --added-family: "DatCub", sans-serif;
-  --content-width: 1170px;
+  --content-width: 1130px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --light-color: #ffffff;
+  --black-color: #000000;
+  --bg-color: #3935bf;
+  --emerald-color: #5ed19c;
+  --gold-color: #ffd600;
 }
