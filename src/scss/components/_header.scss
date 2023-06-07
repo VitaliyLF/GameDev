@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: transparent;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 108px;
+  }
+}
