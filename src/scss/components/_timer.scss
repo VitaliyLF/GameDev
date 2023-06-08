@@ -1,0 +1,37 @@
+.timer {
+  &__title {
+    margin: 0 auto;
+    max-width: 462px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: var(--light-color);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    font-family: var(--added-family);
+    font-size: 82px;
+    line-height: 94px;
+    text-transform: uppercase;
+    color: var(--gold-color);
+    text-shadow: 0px 0px 4px rgba(255, 204, 90, 0.6),
+      0px 8px 16px rgba(255, 204, 90, 0.3);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--light-color);
+    text-shadow: none;
+    text-transform: initial;
+  }
+}
