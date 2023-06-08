@@ -1,3 +1,29 @@
+@mixin computer {
+  @keyframes computer {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+}
+
+@mixin arm {
+  @keyframes arm {
+    0%,
+    100% {
+      transform: rotate(0);
+      transform-origin: 10% 90%;
+    }
+    50% {
+      transform: rotate(8deg);
+      transform-origin: 10% 90%;
+    }
+  }
+}
+
 @mixin elemRotateBottomRight {
   @keyframes elemRotateBottomRight {
     0% {
