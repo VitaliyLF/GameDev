@@ -16,11 +16,10 @@
     z-index: -2;
   }
 
-  &__wrapper {
-    display: flex;
-    max-width: 1130px;
-    width: 100%;
-  }
+  // &__wrapper {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   &__content {
     position: relative;
@@ -57,6 +56,182 @@
     color: var(--light-color);
   }
 
+  &__for-tablet {
+    display: none;
+  }
+
+  .hero-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__bg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__img {
+      position: absolute;
+
+      &--1 {
+        top: -328px;
+        right: 0;
+        z-index: -1;
+      }
+
+      &--2 {
+        top: -460px;
+        right: 0;
+        z-index: -2;
+      }
+
+      &--3 {
+        top: -800px;
+        right: 0;
+        z-index: -3;
+      }
+    }
+
+    &__main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__man {
+      position: absolute;
+      right: 400px;
+      top: -620px;
+      z-index: -2;
+    }
+
+    &__arms {
+      @include arm;
+
+      position: absolute;
+      right: 375px;
+      top: -460px;
+      animation: arm 3s linear 0s infinite normal forwards;
+    }
+
+    &__computer {
+      @include computer;
+
+      position: absolute;
+      top: -625px;
+      right: 305px;
+      animation: computer 2.5s linear 0s infinite normal forwards;
+    }
+
+    &__second {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__decor {
+      position: absolute;
+
+      &--1 {
+        top: -380px;
+        right: 762px;
+        animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+      }
+
+      &--2 {
+        top: -433px;
+        right: 693px;
+        animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--3 {
+        @include elemRotate;
+
+        top: -463px;
+        right: 652px;
+        animation: elemRotate 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--4 {
+        top: -617px;
+        right: 487px;
+        animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--5 {
+        top: -512px;
+        right: 682px;
+        animation: elemRotateTopRight 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--6 {
+        top: -457px;
+        right: 529px;
+        z-index: -3;
+        animation: elemRotateTopRight 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--7 {
+        top: -477px;
+        right: 472px;
+        animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--8 {
+        top: -550px;
+        right: 459px;
+        animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--9 {
+        top: -554px;
+        right: 368px;
+        animation: elemRotate 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--10 {
+        top: -483px;
+        right: 417px;
+        animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--11 {
+        top: -661px;
+        right: 376px;
+        animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--12 {
+        top: -580px;
+        right: 266px;
+        animation: elemRotateBottomRight 5s linear 0.3s infinite normal forwards;
+      }
+
+      &--13 {
+        top: -494px;
+        right: 207px;
+        animation: elemRotate 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--14 {
+        top: -738px;
+        right: 226px;
+        animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+      }
+
+      &--15 {
+        top: -769px;
+        right: 33px;
+        animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+      }
+    }
+  }
+
   &__icon {
     position: relative;
     width: 100%;
@@ -70,7 +245,7 @@
       @include elemRotateBottomRight;
 
       bottom: 284px;
-      left: -326px;
+      left: 60px;
       animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
     }
 
@@ -78,7 +253,7 @@
       @include elemVibrate;
 
       bottom: -40px;
-      left: -384px;
+      left: 0;
       animation: elemVibrate 4s linear 0.3s infinite normal forwards;
     }
 
@@ -86,7 +261,7 @@
       @include elemRotateTopRight;
 
       bottom: -76px;
-      left: -145px;
+      left: 290px;
       animation: elemRotateTopRight 5s linear 0.3s infinite normal forwards;
     }
 
@@ -94,7 +269,7 @@
       @include elemRotateTopLeft;
 
       bottom: 86px;
-      left: -43px;
+      left: 345px;
       animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
     }
 
@@ -102,7 +277,7 @@
       @include elemRotateTopLeft;
 
       bottom: 94px;
-      left: -182px;
+      left: 200px;
       animation: elemRotateTopLeft 5s linear 0.3s infinite normal forwards;
     }
   }
