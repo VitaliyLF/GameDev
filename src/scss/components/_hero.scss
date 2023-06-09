@@ -47,13 +47,8 @@
   }
 
   &__descr {
-    margin: 0;
     margin-bottom: 30px;
     max-width: 499px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    color: var(--light-color);
   }
 
   &__for-tablet {
@@ -64,6 +59,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: -1;
 
     &__bg {
       position: relative;
@@ -103,7 +99,7 @@
 
     &__man {
       position: absolute;
-      right: 400px;
+      right: 430px;
       top: -620px;
       z-index: -2;
     }
@@ -112,7 +108,7 @@
       @include arm;
 
       position: absolute;
-      right: 375px;
+      right: 382px;
       top: -460px;
       animation: arm 3s linear 0s infinite normal forwards;
     }
@@ -244,7 +240,7 @@
     &--1 {
       @include elemRotateBottomRight;
 
-      bottom: 284px;
+      bottom: 130px;
       left: 60px;
       animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
     }

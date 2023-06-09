@@ -111,3 +111,20 @@ a {
   grid-template-rows: repeat(12, 1fr);
   gap: 30px;
 }
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--light-color);
+  text-transform: initial;
+}
+
+.descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: var(--light-color);
+}
