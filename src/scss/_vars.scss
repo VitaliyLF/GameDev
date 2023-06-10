@@ -9,10 +9,17 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  --content-fluid-width: 1400px;
+  --container-fluid-offset: 15px;
+  --container-fluid-width: calc(
+    var(--content-fluid-width) + (var(--container-fluid-offset) * 2)
+  );
+
   // colors
   --light-color: #ffffff;
   --black-color: #000000;
   --bg-color: #3935bf;
   --emerald-color: #5ed19c;
   --gold-color: #ffd600;
+  --mine-color: #343434;
 }
