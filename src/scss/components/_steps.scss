@@ -1,0 +1,192 @@
+.steps {
+  position: relative;
+  padding-top: 173px;
+  background-color: var(--bg-color);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/steps/steps-bg1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -90px center;
+    z-index: -4;
+  }
+
+  &__title {
+    max-width: 332px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    counter-reset: steps;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 400px;
+      background-image: url(../img/steps/steps-bg-line.svg);
+      background-repeat: no-repeat;
+      background-size: inherit;
+      background-position: center;
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    @include mr(20px);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    padding-bottom: 50px;
+
+    &--one {
+      padding-top: 250px;
+    }
+
+    &--two {
+      padding-top: 80px;
+    }
+
+    &--three {
+      padding-top: 200px;
+    }
+  }
+
+  &__content {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 31px;
+    color: var(--mine-color);
+  }
+
+  &__text {
+    color: var(--mine-color);
+  }
+
+  &__inner {
+    position: relative;
+    flex-grow: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      content: counter(steps);
+      counter-increment: steps;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 74px;
+      height: 74px;
+      background-color: var(--light-color);
+      border-radius: 100%;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 23px;
+      color: var(--mine-color);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 297px;
+      height: 283px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+
+    &--one {
+      top: 60px;
+      right: 10px;
+
+      &::after {
+        bottom: 0;
+        left: 0;
+      }
+
+      &::before {
+        @include updown;
+
+        top: -50px;
+        right: 0;
+        background-image: url(../img/steps/steps-lvl1.svg);
+        animation: updown 5s linear infinite;
+      }
+    }
+
+    &--two {
+      &::after {
+        top: 0;
+        right: 0;
+      }
+
+      &::before {
+        top: -20px;
+        right: 50px;
+        background-image: url(../img/steps/steps-lvl2.svg);
+        animation: updown 4s linear infinite;
+      }
+    }
+
+    &--three {
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      &::before {
+        top: -90px;
+        right: 60px;
+        background-image: url(../img/steps/steps-lvl3.svg);
+        animation: updown 3s linear infinite;
+      }
+    }
+
+    &--four {
+      &::after {
+        top: 0;
+        right: 0;
+      }
+
+      &::before {
+        top: 0;
+        right: 80px;
+        background-image: url(../img/steps/steps-lvl4.svg);
+        animation: updown 2s linear infinite;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__apply {
+    padding-top: 100px;
+  }
+}
