@@ -1,8 +1,9 @@
-const videoBlog = document.querySelector('.video-block');
+const videoBlogs = document.querySelectorAll('.video-block');
 
-if (videoBlog) {
-  const video = document.querySelector('video');
-  const playBtn = document.querySelector('.video-block__play');
+videoBlogs.forEach(function (videoBlog) {
+  const video = videoBlog.querySelector('video');
+  const playBtn = videoBlog.querySelector('.video-block__play');
+
   playBtn.addEventListener('click', () => {
     videoBlog.classList.add('video-block--played');
     video.play();
@@ -15,4 +16,4 @@ if (videoBlog) {
     video.controls = false;
     playBtn.classList.remove('video-block__play--played');
   };
-}
+});
