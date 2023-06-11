@@ -118,6 +118,69 @@ a {
   gap: 30px;
 }
 
+.custom-checkbox {
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 33px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 1px;
+    display: inline-block;
+    border: 1px solid var(--light-color);
+    border-radius: 3px;
+    background-color: var(--light-color);
+    width: 18px;
+    height: 18px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__text::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--light-color);
+    border-radius: 3px;
+    background-color: var(--light-color);
+    background-image: url("../img/check.svg");
+    background-position: center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__input:checked + &__text::before {
+    background-color: var(--color-primary);
+  }
+
+  &__input:checked + &__text::after {
+    opacity: 1;
+  }
+
+  &__input:focus + &__text {
+    outline: 3px solid var(--color-primary);
+  }
+}
+
 .title {
   margin: 0;
   font-weight: 700;

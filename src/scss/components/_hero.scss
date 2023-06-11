@@ -281,12 +281,7 @@
   &__timer {
     padding: 40px 0;
     text-align: center;
-    background: radial-gradient(
-        64.53% 420.41% at 86.74% 84.17%,
-        rgba(97, 0, 255, 0.3) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
-      rgba(0, 0, 0, 0.2);
+    background: var(--timer-gd-color);
     background-blend-mode: screen, normal;
     backdrop-filter: blur(15px);
   }
