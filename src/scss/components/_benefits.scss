@@ -1,0 +1,151 @@
+.benefits {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  background-color: var(--governor-color);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/benefits/benefits-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  &__decor {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__decor-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 410px;
+    top: 300px;
+    right: -50px;
+    z-index: -1;
+  }
+
+  &__decor-bg {
+    position: absolute;
+
+    &--1 {
+      animation: elemVibrate 2s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 190px;
+      right: 110px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: 210px;
+      right: 50px;
+      animation: elemVibrate 6s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      top: 250px;
+      right: 110px;
+      animation: elemVibrate 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--5 {
+      top: 320px;
+      right: 140px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--6 {
+      top: 350px;
+      right: 60px;
+      animation: elemVibrate 5s linear 0.3s infinite normal forwards;
+    }
+
+    &--7 {
+      top: 350px;
+      right: 130px;
+      animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--8 {
+      top: 360px;
+      right: 100px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--9 {
+      top: 40px;
+      right: 85px;
+      z-index: -2;
+      animation: elemRotate 5s linear 0.3s infinite normal forwards;
+    }
+  }
+
+  &__title {
+    max-width: 811px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    @include mb(20px);
+
+    max-width: 938px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--light-color);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+
+    &--two {
+      flex-direction: row-reverse;
+    }
+
+    &--four {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 40px;
+    padding-right: 30px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 31px;
+    color: var(--mine-color);
+  }
+
+  &__descr {
+    color: var(--mine-color);
+  }
+
+  &__video {
+    max-width: 449px;
+  }
+
+  .video-block {
+    height: 216px;
+  }
+}
