@@ -10,7 +10,7 @@
     left: 0;
     width: 816px;
     height: 254px;
-    background-image: url(../img/hero-bg/hero-top-bg.svg);
+    background-image: url(../img/hero-bg/hero-top-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
     z-index: -2;
@@ -29,7 +29,7 @@
   }
 
   &__course {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 31px;
@@ -49,10 +49,6 @@
   &__descr {
     margin-bottom: 30px;
     max-width: 499px;
-  }
-
-  &__for-tablet {
-    display: none;
   }
 
   .hero-scene {
