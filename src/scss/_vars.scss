@@ -17,9 +17,26 @@
 
   // colors
   --light-color: #ffffff;
+  --placeholder-color: #a4a4a4;
   --black-color: #000000;
   --bg-color: #3935bf;
   --emerald-color: #5ed19c;
   --gold-color: #ffd600;
   --mine-color: #343434;
+  --border-color: #4642d6;
+
+  //gradient
+  --apply-gd-color: radial-gradient(
+      57.17% 310.33% at 2.92% 90.62%,
+      rgba(255, 214, 0, 0.23) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.2);
+
+  --timer-gd-color: radial-gradient(
+      64.53% 420.41% at 86.74% 84.17%,
+      rgba(97, 0, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.2);
 }

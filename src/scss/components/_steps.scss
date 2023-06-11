@@ -18,6 +18,20 @@
     z-index: -4;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/steps/steps-bg2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    z-index: -3;
+  }
+
   &__title {
     max-width: 332px;
     margin-bottom: 30px;
@@ -25,6 +39,7 @@
 
   &__list {
     position: relative;
+    margin-bottom: 200px;
     display: flex;
     counter-reset: steps;
 
@@ -91,13 +106,12 @@
     flex-grow: 1;
 
     &::after {
+      @include flex-all-center;
+
       content: "";
       position: absolute;
       content: counter(steps);
       counter-increment: steps;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 74px;
       height: 74px;
       background-color: var(--light-color);
@@ -186,7 +200,92 @@
     margin: 0 auto;
   }
 
-  &__apply {
-    padding-top: 100px;
+  &__decor {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__decor-wrapper {
+    position: absolute;
+    width: 442px;
+    height: 415px;
+    top: 95px;
+    left: -150px;
+    z-index: -1;
+  }
+
+  &__decor-bg {
+    position: absolute;
+
+    &--1 {
+      animation: elemRotate 15s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 0px;
+      left: 250px;
+      animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: 50px;
+      left: -50px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      top: 80px;
+      left: -80px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--5 {
+      top: 180px;
+      left: -50px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--6 {
+      top: 240px;
+      left: 80px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--7 {
+      top: 240px;
+      left: 30px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--8 {
+      top: 265px;
+      left: -70px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--9 {
+      top: 295px;
+      left: -110px;
+      animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--10 {
+      top: 250px;
+      left: -20px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--11 {
+      top: 285px;
+      left: 5px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--12 {
+      top: 300px;
+      left: -50px;
+      animation: elemRotate 4s linear 0.3s infinite normal forwards;
+    }
   }
 }

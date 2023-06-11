@@ -1,0 +1,112 @@
+.apply {
+  @include flex-all-sb;
+
+  padding: 60px 80px;
+  background: var(--apply-gd-color);
+  background-blend-mode: screen, normal;
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  border: 2px solid var(--border-color);
+
+  &__title {
+    max-width: 473px;
+  }
+
+  &__form {
+    max-width: 403px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    color: var(--light-color);
+  }
+
+  &__label {
+    @include mb(20px);
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 27px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--black-color);
+
+    &::placeholder {
+      color: var(--placeholder-color);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  &__btn {
+    margin-right: 13px;
+    background-position: center right 52px;
+    flex-grow: 1;
+  }
+
+  &__text {
+    flex-grow: 2;
+    margin: 0;
+    max-width: 139px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    color: var(--light-color);
+    opacity: 0.5;
+  }
+
+  &__links {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+
+  &__link {
+    @include mb(8px);
+
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--whatsapp {
+      background-image: url(../img/whatsapp.svg);
+    }
+
+    &--tg {
+      background-image: url(../img/tg.svg);
+    }
+  }
+
+  &__terms {
+    display: flex;
+  }
+}
