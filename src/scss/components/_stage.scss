@@ -1,10 +1,61 @@
 .stage {
+  position: relative;
+  padding-top: 130px;
   background-color: var(--bg-color);
+  z-index: 0;
 
-  &__container {
+  &__decor {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__decor-wrapper {
+    position: absolute;
+    width: 379px;
+    height: 404px;
+    top: -130px;
+    right: -300px;
+    z-index: -2;
+  }
+
+  &__decor-bg {
+    position: absolute;
+
+    &--1 {
+      top: -40px;
+      left: 100px;
+      animation: elemRotateTopRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 70px;
+      left: 200px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: -40px;
+      right: 20px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      bottom: 50%;
+      right: 0;
+      animation: elemRotateTopLeft 5s linear 0.3s infinite normal forwards;
+    }
+  }
+
+  &__wrapper {
     display: flex;
     align-items: start;
     justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 20px;
+    max-width: 528px;
   }
 
   &__step {
@@ -16,58 +67,15 @@
     color: var(--emerald-color);
   }
 
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    max-width: 506px;
+  }
+
   &__video {
     border-radius: 30px;
-  }
-
-  &__decor {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__decor-bg {
-    position: absolute;
-
-    &--1 {
-      bottom: 430px;
-      right: 252px;
-      animation: elemRotateTopRight 3s linear 0.3s infinite normal forwards;
-    }
-
-    &--2 {
-      bottom: 348px;
-      right: 130px;
-      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
-    }
-
-    &--3 {
-      bottom: 430px;
-      right: 21px;
-      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
-    }
-
-    &--4 {
-      bottom: 281px;
-      right: 44px;
-      animation: elemRotateTopLeft 5s linear 0.3s infinite normal forwards;
-    }
-  }
-
-  &--one {
-    padding-top: 130px;
-
-    .stage__content {
-      padding-top: 20px;
-      max-width: 528px;
-    }
-
-    .stage__title {
-      margin-bottom: 13px;
-    }
-
-    .stage__descr {
-      max-width: 506px;
-    }
   }
 }
