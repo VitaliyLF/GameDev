@@ -39,7 +39,6 @@
 
   &__list {
     position: relative;
-    margin-bottom: 200px;
     display: flex;
     counter-reset: steps;
 
@@ -198,6 +197,10 @@
   &__image {
     display: block;
     margin: 0 auto;
+  }
+
+  &__container {
+    padding-top: 200px;
   }
 
   &__decor {
