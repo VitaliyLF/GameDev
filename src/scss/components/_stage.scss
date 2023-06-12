@@ -1,10 +1,16 @@
 .stage {
+  padding-top: 130px;
   background-color: var(--bg-color);
 
   &__container {
     display: flex;
     align-items: start;
     justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 20px;
+    max-width: 528px;
   }
 
   &__step {
@@ -14,6 +20,23 @@
     font-size: 31px;
     line-height: 31px;
     color: var(--emerald-color);
+  }
+
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    max-width: 506px;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
   }
 
   &__video {
@@ -54,20 +77,28 @@
     }
   }
 
-  &--one {
-    padding-top: 130px;
-
-    .stage__content {
-      padding-top: 20px;
-      max-width: 528px;
-    }
-
-    .stage__title {
-      margin-bottom: 13px;
-    }
-
+  &--two {
+    background-color: var(--governor-color);
     .stage__descr {
-      max-width: 506px;
+      position: relative;
+      margin-bottom: 30px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        right: -100px;
+        width: 191px;
+        height: 38px;
+        background-image: url(../img/stage/stage-two-line.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .stage__container {
+      padding-bottom: 160px;
     }
   }
 }
