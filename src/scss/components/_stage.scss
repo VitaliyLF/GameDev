@@ -1,8 +1,53 @@
 .stage {
+  position: relative;
   padding-top: 130px;
   background-color: var(--bg-color);
+  z-index: 0;
 
-  &__container {
+  &__decor {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__decor-wrapper {
+    position: absolute;
+    width: 379px;
+    height: 404px;
+    top: -130px;
+    right: -300px;
+    z-index: -2;
+  }
+
+  &__decor-bg {
+    position: absolute;
+
+    &--1 {
+      top: -40px;
+      left: 100px;
+      animation: elemRotateTopRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 70px;
+      left: 200px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: -40px;
+      right: 20px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      bottom: 50%;
+      right: 0;
+      animation: elemRotateTopLeft 5s linear 0.3s infinite normal forwards;
+    }
+  }
+
+  &__wrapper {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -30,75 +75,7 @@
     max-width: 506px;
   }
 
-  &__text {
-    margin: 0;
-    text-align: right;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 22px;
-    color: var(--light-color);
-  }
-
   &__video {
     border-radius: 30px;
-  }
-
-  &__decor {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__decor-bg {
-    position: absolute;
-
-    &--1 {
-      bottom: 430px;
-      right: 252px;
-      animation: elemRotateTopRight 3s linear 0.3s infinite normal forwards;
-    }
-
-    &--2 {
-      bottom: 348px;
-      right: 130px;
-      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
-    }
-
-    &--3 {
-      bottom: 430px;
-      right: 21px;
-      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
-    }
-
-    &--4 {
-      bottom: 281px;
-      right: 44px;
-      animation: elemRotateTopLeft 5s linear 0.3s infinite normal forwards;
-    }
-  }
-
-  &--two {
-    background-color: var(--governor-color);
-    .stage__descr {
-      position: relative;
-      margin-bottom: 30px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -100px;
-        right: -100px;
-        width: 191px;
-        height: 38px;
-        background-image: url(../img/stage/stage-two-line.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-    }
-
-    .stage__container {
-      padding-bottom: 160px;
-    }
   }
 }

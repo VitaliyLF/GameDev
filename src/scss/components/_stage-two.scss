@@ -1,0 +1,129 @@
+.stage-two {
+  position: relative;
+  background-color: var(--governor-color);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/stage/stage-two-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  .stage__wrapper {
+    padding-bottom: 160px;
+  }
+
+  .stage__descr {
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      width: 191px;
+      height: 38px;
+      background-image: url(../img/stage/stage-two-line.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .stage__text {
+    margin: 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+
+  .stage__image {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  .stage__image-wrapper {
+    position: absolute;
+    width: 441px;
+    height: 415px;
+    bottom: 100px;
+    left: -300px;
+  }
+
+  .stage__image-bg {
+    position: absolute;
+    z-index: -1;
+
+    &--1 {
+      left: 150px;
+      z-index: 0;
+      animation: elemVibrate 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 0;
+      right: 0;
+      animation: elemRotate 5s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: 150px;
+      right: 300px;
+      animation: elemVibrate 6s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      top: 100px;
+      right: 350px;
+      animation: elemRotateBottomRight 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--5 {
+      top: 250px;
+      right: 200px;
+      animation: elemRotate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--6 {
+      top: 200px;
+      right: 200px;
+      animation: elemVibrate 6s linear 0.3s infinite normal forwards;
+    }
+
+    &--7 {
+      top: 200px;
+      right: 270px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--8 {
+      top: 260px;
+      right: 300px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--9 {
+      top: 0;
+      right: 300px;
+      animation: elemVibrate 6s linear 0.3s infinite normal forwards;
+    }
+
+    &--10 {
+      top: 300px;
+      right: 350px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+  }
+}
