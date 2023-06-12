@@ -28,8 +28,8 @@
 
   &__decor-wrapper {
     position: absolute;
-    width: 200px;
-    height: 410px;
+    width: 350px;
+    height: 400px;
     top: 300px;
     right: -50px;
     z-index: -1;
@@ -39,6 +39,8 @@
     position: absolute;
 
     &--1 {
+      top: -100px;
+      right: -100px;
       animation: elemVibrate 2s linear 0.3s infinite normal forwards;
     }
 
@@ -85,7 +87,7 @@
     }
 
     &--9 {
-      top: 40px;
+      top: -20px;
       right: 85px;
       z-index: -2;
       animation: elemRotate 5s linear 0.3s infinite normal forwards;

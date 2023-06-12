@@ -1,0 +1,348 @@
+.tariffs {
+  position: relative;
+  padding-top: 130px;
+  background-color: var(--governor-color);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/tariffs/tariffs-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+  }
+
+  &__decor {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__decor-wrapper {
+    position: absolute;
+    width: 323px;
+    height: 404px;
+    top: 300px;
+    left: -300px;
+    z-index: -2;
+  }
+
+  &__decor-bg {
+    position: absolute;
+
+    &--1 {
+      top: 0;
+      left: 100px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      top: 0;
+      left: 250px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: 100px;
+      left: 50px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      top: 50px;
+      left: 0;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--5 {
+      bottom: 100px;
+      right: 40px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+  }
+
+  &__images {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  &__images-wrapper {
+    position: absolute;
+    width: 323px;
+    height: 404px;
+    top: 400px;
+    right: -400px;
+    z-index: -2;
+  }
+
+  &__images-bg {
+    position: absolute;
+
+    &--1 {
+      bottom: 0;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--2 {
+      left: -100px;
+      animation: elemRotateBottomRight 3s linear 0.3s infinite normal forwards;
+    }
+
+    &--3 {
+      top: 100px;
+      animation: elemVibrate 4s linear 0.3s infinite normal forwards;
+    }
+
+    &--4 {
+      top: 100px;
+      left: -50px;
+      animation: elemRotateTopLeft 4s linear 0.3s infinite normal forwards;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 144px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    @include mr(20px);
+
+    position: relative;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    background-blend-mode: lighten, normal;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -95px;
+      left: 30%;
+      width: 157px;
+      height: 143px;
+      background-repeat: no-repeat;
+      background-size: 157px 143px;
+      background-position: center;
+      z-index: -1;
+    }
+
+    &--standart {
+      background: var(--standart-gd-color);
+
+      &::after {
+        @include tariffsElemAnimation;
+
+        background-image: url(../img/tariffs/standart-bg.svg);
+        animation: tariffsElemAnimation 6s ease-in-out infinite;
+      }
+    }
+
+    &--expert {
+      background: var(--expert-gd-color);
+      border: 2px solid var(--emerald-color);
+      box-shadow: 0px 30px 33px -25px var(--emerald-color);
+
+      &::after {
+        background-image: url(../img/tariffs/expert-bg.svg);
+        animation: tariffsElemAnimation 7s ease-in-out infinite;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 173px;
+        background-image: url(../img/tariffs/expert-bg-money.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &--pro {
+      background: var(--pro-gd-color);
+      border: 2px solid var(--gold-color);
+      box-shadow: 0px 30px 33px -25px var(--gold-color);
+      z-index: 1;
+
+      &::after {
+        background-image: url(../img/tariffs/pro-bg.svg);
+        animation: tariffsElemAnimation 6s ease-in-out infinite;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 173px;
+        background-image: url(../img/tariffs/pro-bg-gold.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+
+  &__info {
+    padding-top: 55px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-color);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 31px;
+    color: var(--light-color);
+    text-align: center;
+
+    &--standart {
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.6),
+        0px 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    &--expert {
+      color: var(--emerald-color);
+      text-shadow: 0px 0px 4px rgba(94, 209, 156, 0.6),
+        0px 8px 16px rgba(94, 209, 156, 0.3);
+    }
+
+    &--pro {
+      position: relative;
+      z-index: 1;
+      color: var(--gold-color);
+      text-shadow: 0px 0px 4px rgba(255, 204, 90, 0.6),
+        0px 8px 16px rgba(255, 204, 90, 0.3);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 315px;
+        height: 144px;
+        background-image: url(../img/tariffs/pro-stars-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__descr {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+    opacity: 0.5;
+  }
+
+  &__sublist {
+    margin-bottom: 22px;
+  }
+
+  &__subitem {
+    @include mb(10px);
+
+    position: relative;
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 12px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--available {
+      &::after {
+        background-image: url(../img/tariffs/tariffs-check-true.svg);
+      }
+    }
+
+    &--unavailable {
+      opacity: 0.5;
+
+      &::after {
+        background-image: url(../img/tariffs/tariffs-check-false.svg);
+      }
+    }
+  }
+
+  &__price-old {
+    margin-top: auto;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: line-through;
+    color: var(--bluebell-color);
+  }
+
+  &__price-new {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: var(--light-color);
+  }
+
+  &__btn {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 216px;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+}

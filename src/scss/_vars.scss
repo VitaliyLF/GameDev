@@ -24,6 +24,7 @@
   --mine-color: #343434;
   --border-color: #4642d6;
   --governor-color: #3231aa;
+  --bluebell-color: #9492c3;
 
   //gradient
   --apply-gd-color: radial-gradient(
@@ -39,4 +40,25 @@
       rgba(0, 0, 0, 0) 100%
     ),
     rgba(0, 0, 0, 0.2);
+
+  --standart-gd-color: radial-gradient(
+      102.47% 51.8% at 50.14% 16.74%,
+      rgba(255, 255, 255, 0.152) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.3);
+
+  --expert-gd-color: radial-gradient(
+      102.47% 51.8% at 50.14% 16.74%,
+      rgba(94, 209, 156, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.3);
+
+  --pro-gd-color: radial-gradient(
+      102.47% 51.8% at 50.14% 16.74%,
+      rgba(255, 214, 1, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.3);
 }
