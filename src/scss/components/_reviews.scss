@@ -119,4 +119,10 @@
     max-width: 364px;
     margin: 0 auto;
   }
+
+  .btn--stroke {
+    @include hover {
+      background-image: none;
+    }
+  }
 }
