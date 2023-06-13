@@ -29,6 +29,11 @@
 
   &__label {
     @include mb(20px);
+
+    .just-validate-error-label {
+      padding-top: 10px;
+      color: var(--gold-color) !important;
+    }
   }
 
   &__input {
