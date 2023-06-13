@@ -42,6 +42,11 @@
     line-height: 22px;
     color: var(--black-color);
 
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
+    }
+
     &::placeholder {
       color: var(--placeholder-color);
     }
@@ -101,6 +106,11 @@
 
     &--tg {
       background-image: url(../img/tg.svg);
+    }
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
     }
   }
 

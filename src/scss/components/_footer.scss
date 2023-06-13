@@ -27,10 +27,6 @@
     margin: 0;
   }
 
-  &__contacts {
-    flex-grow: 1;
-  }
-
   &__contacts-title {
     margin: 0;
     margin-bottom: 20px;
@@ -47,6 +43,11 @@
     font-size: 17px;
     line-height: 22px;
     color: var(--light-color);
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
+    }
   }
 
   &__contacts-mail {
@@ -56,6 +57,11 @@
     font-size: 17px;
     line-height: 22px;
     color: var(--light-color);
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
+    }
   }
 
   &__contacts-list {
@@ -92,6 +98,11 @@
 
     &--youtube {
       background-image: url(../img/youtube.svg);
+    }
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
     }
   }
 }
