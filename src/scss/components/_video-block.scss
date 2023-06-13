@@ -32,13 +32,18 @@
       z-index: 11;
     }
 
-    @include hover {
-      box-shadow: rgba(11, 42, 216, 0.5) 0px 0px 0px 0px;
-    }
-
     &--played {
       opacity: 0;
       visibility: hidden;
+    }
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
+    }
+
+    @include hover {
+      box-shadow: rgba(11, 42, 216, 0.5) 0px 0px 0px 0px;
     }
   }
 

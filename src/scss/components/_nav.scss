@@ -13,6 +13,42 @@
   }
 
   &__link {
+    position: relative;
+    overflow: hidden;
     color: currentColor;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: var(--gold-color);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s;
+      opacity: 0;
+    }
+
+    &:focus {
+      outline: 2px solid var(--gold-color);
+      outline-offset: 4px;
+    }
+
+    @include hover {
+      &::after {
+        @include fillAnimation;
+
+        animation: fillAnimation 0.3s linear forwards;
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      color: var(--placeholder-color);
+    }
   }
 }
