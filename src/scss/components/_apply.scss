@@ -90,15 +90,13 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 20px;
-      height: 20px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
-    &--whatsapp {
-      background-image: url(../img/whatsapp.svg);
+    &--insta {
+      background-image: url(../img/insta.svg);
     }
 
     &--tg {

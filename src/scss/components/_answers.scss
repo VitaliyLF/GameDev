@@ -1,5 +1,6 @@
 .answers {
   position: relative;
+  overflow: hidden;
   padding: 130px 0;
   background-color: var(--governor-color);
   z-index: 1;
@@ -71,6 +72,10 @@
   .accordion__descr {
     text-align: left;
     transition: color 0.3s ease;
+  }
+
+  .accordion__content {
+    padding: 0;
   }
 }
 

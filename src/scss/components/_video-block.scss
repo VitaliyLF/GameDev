@@ -13,7 +13,7 @@
     left: 50%;
     width: 60px;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(13, 32, 202, 0.473);
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@
     }
 
     @include hover {
-      box-shadow: rgba(59, 54, 54, 0.5) 0px 0px 0px 0px;
+      box-shadow: rgba(11, 42, 216, 0.5) 0px 0px 0px 0px;
     }
 
     &--played {
