@@ -1,0 +1,97 @@
+.footer {
+  padding: 50px 0;
+  background-color: var(--governor-color);
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 650px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--light-color);
+    opacity: 0.5;
+  }
+
+  &__descr {
+    @include mb(10px);
+
+    margin: 0;
+  }
+
+  &__contacts {
+    flex-grow: 1;
+  }
+
+  &__contacts-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    color: var(--light-color);
+  }
+
+  &__contacts-phone {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+
+  &__contacts-mail {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+
+  &__contacts-list {
+    display: flex;
+  }
+
+  &__contacts-item {
+    @include mr(20px);
+  }
+
+  &__contacts-link {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--insta {
+      background-image: url(../img/insta.svg);
+    }
+
+    &--tg {
+      background-image: url(../img/tg.svg);
+    }
+
+    &--youtube {
+      background-image: url(../img/youtube.svg);
+    }
+  }
+}
