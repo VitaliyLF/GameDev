@@ -123,6 +123,7 @@
   .btn--stroke {
     @include hover {
       background-image: none;
+      box-shadow: none;
     }
   }
 }
