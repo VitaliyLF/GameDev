@@ -4,6 +4,10 @@
   background-color: var(--bg-color);
   z-index: 0;
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &__decor {
     position: relative;
     width: 100%;
@@ -17,6 +21,10 @@
     top: -130px;
     right: -300px;
     z-index: -2;
+
+    @include big-desktop {
+      display: none;
+    }
   }
 
   &__decor-bg {
@@ -51,11 +59,21 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__content {
     padding-top: 20px;
     max-width: 528px;
+
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
   }
 
   &__step {
@@ -77,5 +95,9 @@
 
   &__video {
     border-radius: 30px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
