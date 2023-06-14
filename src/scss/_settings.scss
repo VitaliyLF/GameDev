@@ -188,6 +188,11 @@ a {
   line-height: 50px;
   color: var(--light-color);
   text-transform: initial;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 
 .descr {
