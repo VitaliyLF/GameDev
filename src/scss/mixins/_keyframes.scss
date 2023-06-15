@@ -151,21 +151,6 @@
   }
 }
 
-@mixin mobMenuOp {
-  @keyframes mobMenuOp {
-    0% {
-      backdrop-filter: blur(0px);
-      background-position: 0 0;
-      background-size: 5px 5px;
-    }
-    100% {
-      background-position: 100% 50%;
-      background-size: 810px 810px;
-      backdrop-filter: blur(10px);
-    }
-  }
-}
-
 @mixin pulse-btn-bg {
   @keyframes pulse-btn-bg {
     100% {
