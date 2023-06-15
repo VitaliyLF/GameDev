@@ -8,14 +8,35 @@
   border-radius: 30px;
   border: 2px solid var(--border-color);
 
+  @include big-desktop {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    padding: 20px;
+  }
+
   &__title {
     max-width: 473px;
+
+    @include big-desktop {
+      max-width: 403px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__form {
     max-width: 403px;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__descr {
@@ -25,6 +46,11 @@
     font-size: 25px;
     line-height: 28px;
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 15px;
+    }
   }
 
   &__label {
@@ -60,16 +86,29 @@
   &__contact {
     display: flex;
     margin-bottom: 23px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__social {
+    display: flex;
   }
 
   &__btn {
     margin-right: 13px;
     background-position: center right 52px;
-    flex-grow: 1;
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
-    flex-grow: 2;
     margin: 0;
     max-width: 139px;
     font-weight: 400;
@@ -81,10 +120,13 @@
   }
 
   &__links {
-    flex-grow: 0;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+
+    @include mobile {
+      flex-direction: row;
+    }
   }
 
   &__link {
@@ -94,6 +136,12 @@
     display: block;
     width: 20px;
     height: 20px;
+
+    @include mobile {
+      @include mb(0);
+
+      @include mr(5px);
+    }
 
     &::after {
       content: "";
@@ -121,5 +169,10 @@
 
   &__terms {
     display: flex;
+
+    @include mobile {
+      display: block;
+      max-width: 100%;
+    }
   }
 }

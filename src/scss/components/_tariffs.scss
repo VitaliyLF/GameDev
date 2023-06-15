@@ -4,6 +4,10 @@
   background-color: var(--governor-color);
   z-index: 1;
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -114,6 +118,10 @@
 
   &__list {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -127,6 +135,12 @@
     backdrop-filter: blur(15px);
     border-radius: 30px;
 
+    @include tablet {
+      @include mr(0);
+
+      @include mb(100px);
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -138,6 +152,28 @@
       background-size: 157px 143px;
       background-position: center;
       z-index: -1;
+
+      @include tablet {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 173px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @include tablet {
+        background-size: contain;
+      }
     }
 
     &--standart {
@@ -148,6 +184,10 @@
 
         background-image: url(../img/tariffs/standart-bg.svg);
         animation: tariffsElemAnimation 6s ease-in-out infinite;
+
+        @include tablet {
+          animation: none;
+        }
       }
     }
 
@@ -159,20 +199,14 @@
       &::after {
         background-image: url(../img/tariffs/expert-bg.svg);
         animation: tariffsElemAnimation 7s ease-in-out infinite;
+
+        @include tablet {
+          animation: none;
+        }
       }
 
       &::before {
-        content: "";
-        position: absolute;
-        top: -75px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 173px;
         background-image: url(../img/tariffs/expert-bg-money.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
       }
     }
 
@@ -185,20 +219,14 @@
       &::after {
         background-image: url(../img/tariffs/pro-bg.svg);
         animation: tariffsElemAnimation 6s ease-in-out infinite;
+
+        @include tablet {
+          animation: none;
+        }
       }
 
       &::before {
-        content: "";
-        position: absolute;
-        top: -75px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 173px;
         background-image: url(../img/tariffs/pro-bg-gold.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
       }
     }
   }

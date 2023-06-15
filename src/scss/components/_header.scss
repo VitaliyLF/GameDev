@@ -4,16 +4,24 @@
   right: 0;
   width: 100%;
   padding: 16px 0;
-  z-index: 1000;
+  z-index: 200;
   transition: background-color 0.3s ease;
 
   &__container {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
     margin-right: 108px;
+
+    @include tablet {
+      margin-right: 0;
+    }
   }
 }
 

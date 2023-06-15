@@ -1,10 +1,30 @@
 .nav {
   @include tablet {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 190px;
+    height: 45vh;
+    padding: 30px 0;
+    border-radius: 30px 0 0 30px;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 100%
+    );
+    background-position: 0 0;
+    overflow-y: auto;
+    transition: opacity 1s ease, background-position 1s ease;
   }
 
   &__list {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__item {
@@ -12,6 +32,21 @@
 
     @include big-desktop {
       @include mr(18px);
+    }
+
+    @include tablet {
+      @include mr(0);
+
+      @include mb(11px);
+
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      color: var(--black-color);
+      padding-bottom: 9px;
+      padding-left: 30px;
     }
 
     font-weight: 400;
@@ -59,4 +94,21 @@
       color: var(--placeholder-color);
     }
   }
+}
+
+.nav.menu--active {
+  @include mobMenuOp;
+
+  opacity: 1;
+  background: radial-gradient(
+    ellipse at center,
+    #fff 0%,
+    #fff 47%,
+    #fff 47%,
+    transparent 47%,
+    transparent 48%
+  );
+  background-position: 150% 50%;
+  background-repeat: no-repeat;
+  animation: mobMenuOpen 1s ease 0s 1 normal forwards;
 }
