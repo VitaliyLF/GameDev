@@ -97,6 +97,7 @@
   }
 
   .accordion__descr {
+    display: block;
     text-align: left;
     transition: color 0.3s ease;
 
@@ -107,6 +108,7 @@
   }
 
   .accordion__content {
+    display: inline-block;
     padding: 0;
   }
 }
