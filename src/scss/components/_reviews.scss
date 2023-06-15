@@ -4,6 +4,10 @@
   background-color: var(--governor-color);
   z-index: 1;
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -33,6 +37,11 @@
 
   &__decor-bg {
     position: absolute;
+
+    @include tablet {
+      left: 0;
+      right: 0;
+    }
 
     &--1 {
       @include elemTwinkle;
@@ -81,6 +90,12 @@
   &__list {
     display: flex;
     margin-bottom: 30px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -89,6 +104,12 @@
     max-width: 555px;
     background-color: var(--light-color);
     border-radius: 30px;
+
+    @include tablet {
+      @include mr(0);
+
+      @include mb(20px);
+    }
   }
 
   .video-block {
@@ -98,6 +119,10 @@
 
   &__content {
     padding: 14px 40px 40px;
+
+    @include mobile {
+      padding: 20px;
+    }
   }
 
   &__name {
@@ -118,6 +143,11 @@
     display: block;
     max-width: 364px;
     margin: 0 auto;
+
+    @include mobile {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   .btn--stroke {

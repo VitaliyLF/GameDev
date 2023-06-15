@@ -19,6 +19,10 @@
 
   .stage__wrapper {
     padding-bottom: 160px;
+
+    @include mobile {
+      padding-bottom: 100px;
+    }
   }
 
   .stage__descr {
@@ -36,6 +40,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 
@@ -46,25 +54,27 @@
     font-size: 17px;
     line-height: 22px;
     color: var(--light-color);
-  }
 
-  .stage__image {
-    position: relative;
-    width: 100%;
-    height: 0;
+    @include tablet {
+      display: none;
+    }
   }
 
   .stage__image-wrapper {
     position: absolute;
+    top: 0;
+    left: -300px;
     width: 441px;
     height: 415px;
-    bottom: 100px;
-    left: -300px;
+    z-index: 1;
+
+    @include big-desktop {
+      display: none;
+    }
   }
 
   .stage__image-bg {
     position: absolute;
-    z-index: -1;
 
     &--1 {
       left: 150px;
@@ -73,7 +83,7 @@
     }
 
     &--2 {
-      top: 0;
+      top: -30px;
       right: 0;
       animation: elemRotate 5s linear 0.3s infinite normal forwards;
     }
