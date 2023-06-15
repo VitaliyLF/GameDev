@@ -58,7 +58,6 @@
   &__wrapper {
     display: flex;
     align-items: start;
-    justify-content: space-between;
 
     @include tablet {
       flex-direction: column;
@@ -69,10 +68,12 @@
   &__content {
     padding-top: 20px;
     max-width: 528px;
+    margin-right: 70px;
 
     @include tablet {
       padding-top: 0;
       padding-bottom: 20px;
+      margin-right: 0;
     }
   }
 
@@ -93,11 +94,7 @@
     max-width: 506px;
   }
 
-  &__video {
-    border-radius: 30px;
-
-    @include mobile {
-      width: 100%;
-    }
+  .video-block {
+    max-width: 555px;
   }
 }
