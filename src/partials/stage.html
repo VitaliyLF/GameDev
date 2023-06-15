@@ -24,8 +24,15 @@
           простым
           языком. А также огромное количество практики, ведь изучить программирование просто по видео нереально.</p>
       </div>
-      <iframe class="stage__video" width="555" height="382" src="https://www.youtube.com/embed/yYLS6FNv2vs"
-        allowfullscreen loading="lazy" title="Наша методология и программа"></iframe>
+      <div class="stage__video video-block">
+        <button class="video-block__play btn-reset" aria-label="Play Video">
+          <svg>
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+        </button>
+        <video class="video-block__content" src="video-stage.mp4" muted loop preload="metadata" width="555"
+          height="382"></video>
+      </div>
     </div>
   </div>
 </section>
