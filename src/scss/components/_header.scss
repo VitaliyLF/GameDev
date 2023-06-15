@@ -14,10 +14,6 @@
     @include tablet {
       justify-content: space-between;
     }
-
-    @include mobile {
-      justify-content: space-around;
-    }
   }
 
   &__logo {
