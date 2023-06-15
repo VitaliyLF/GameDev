@@ -10,7 +10,7 @@
     left: 0;
     width: 816px;
     height: 254px;
-    background-image: url(../img/hero-bg/hero-top-bg.png);
+    background-image: url(../img/hero-bg/hero-top-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
     z-index: -2;
@@ -43,7 +43,7 @@
 
     @include big-desktop {
       display: block;
-      flex-grow: 1;
+      width: 100%;
     }
   }
 
