@@ -12,7 +12,6 @@
 
 ## :clipboard: Что я реализовал:
 - Pixel Perfect
-- Зеленая зона The W3C Markup Validation
 - Валидация формы
 - Зеленая зона Google Lighthouse
 - Аккордеон
