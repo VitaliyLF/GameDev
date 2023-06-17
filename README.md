@@ -14,6 +14,7 @@
 - Pixel Perfect
 - Валидация формы
 - Зеленая зона Google Lighthouse
+- Зеленая зона The W3C Markup Validation
 - Аккордеон
 - Модальные окна
 - Таймер
