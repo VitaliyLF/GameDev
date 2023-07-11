@@ -8,7 +8,7 @@
 - JS
 - Figma
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,scss,figma,gulp,)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,scss,figma,gulp,svg)](https://skillicons.dev)
 
 ## :clipboard: Что я реализовал:
 - Pixel Perfect
