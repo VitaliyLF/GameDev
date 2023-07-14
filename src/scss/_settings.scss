@@ -78,6 +78,21 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.skiplink {
+  position: absolute;
+  top: -200px;
+  left: 15px;
+  transition: top 0.3s ease;
+  color: var(--gold-color);
+  z-index: 1000;
+
+  &:focus {
+    top: 15px;
+    outline: 2px solid var(--gold-color);
+    outline-offset: 4px;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
