@@ -7,6 +7,8 @@
 - БЭМ
 - Gulp сборка
 - Figma
+- A11y
+- SEO
 
 [![My Skills](https://skillicons.dev/icons?i=html,scss,js,svg,gulp,figma)](https://skillicons.dev)
 
