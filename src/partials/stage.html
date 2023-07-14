@@ -1,4 +1,4 @@
-<section class="stage">
+<section class="stage" id="stage">
   <div class="container">
     <div class="stage__decor">
       <div class="stage__decor-wrapper">
@@ -15,7 +15,7 @@
     <h2 class="visually-hidden">Наша методология и программа</h2>
     <div class="stage__wrapper">
       <div class="stage__content">
-        <span class="stage__step">1 ступень</span>
+        <p class="stage__step">1 ступень</p>
         <h3 class="stage__title title">Никакой воды и куча практики.</h3>
         <p class="stage__descr descr">Мы даем только практически применимые знания. Нет ничего, что не пригодилось бы в
           реальной практике. Средняя продолжительность видеоуроков - 10 минут, что позволяет очень эффективно
@@ -25,13 +25,15 @@
           языком. А также огромное количество практики, ведь изучить программирование просто по видео нереально.</p>
       </div>
       <div class="stage__video video-block">
-        <button class="video-block__play btn-reset" aria-label="Play Video">
+        <button class="video-block__play btn-reset" type="button" aria-describedby="video-description-stage-1"
+          aria-label="Воспроизвести видео">
           <svg>
             <use xlink:href="img/sprite.svg#play"></use>
           </svg>
         </button>
         <video class="video-block__content" src="video-stage.webm" muted loop preload="metadata" width="555"
           height="382" poster="img/stage/poster-video.jpg"></video>
+        <p class="visually-hidden" id="video-description-stage-1">Человек печатает на клавиатуре</p>
       </div>
     </div>
   </div>

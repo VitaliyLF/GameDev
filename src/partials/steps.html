@@ -99,11 +99,13 @@
       <form class="apply__form">
         <p class="apply__descr">Оставь заявку на консультацию, где ты сможешь задать все интересующие тебя вопросы
           касаемо нашего обучения</p>
-        <label class="apply__label">
-          <input class="apply__input input-reset input-name" type="text" name="name" placeholder="Твое имя">
+        <label class="apply__label" for="input-name-steps1" aria-label="Введите ваше имя">
+          <input class="apply__input input-reset input-name" id="input-name-steps1" type="text" name="name"
+            placeholder="Твое имя" required aria-required="true" aria-label="Поле для ввода вашего имени">
         </label>
-        <label class="apply__label">
-          <input class="apply__input input-reset input-tel" type="tel" name="phone" placeholder="Телефон">
+        <label class="apply__label" for="input-tel-steps1" aria-label="Введите ваш телефон">
+          <input class="apply__input input-reset input-tel" id="input-tel-steps1" type="tel" name="phone" placeholder="Телефон"
+            required aria-required="true" aria-label="Поле для ввода вашего номера телефона">
         </label>
         <div class="apply__contact">
           <button class="apply__btn btn btn-reset" type="submit" aria-label="Отправить заявку">Отправить</button>
@@ -118,8 +120,9 @@
           </div>
         </div>
         <div class="apply__terms">
-          <label class="apply__label custom-checkbox">
-            <input class="custom-checkbox__input" type="checkbox">
+          <label class="apply__label custom-checkbox" for="input-checkbox-steps1" aria-label="Нажмите для принятий условий">
+            <input class="custom-checkbox__input" id="input-checkbox-steps1" required aria-required="true"
+              aria-label="Нажимая на кнопку, вы соглашаетесь с условиями передачи информации." type="checkbox">
             <span class="custom-checkbox__text">Я принимаю условия передачи информации</span>
           </label>
         </div>

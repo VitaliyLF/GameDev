@@ -1,7 +1,12 @@
 .stage-two {
   position: relative;
+  padding-top: 100px;
   background-color: var(--governor-color);
   z-index: 1;
+
+  @include mobile {
+    padding-top: 50px;
+  }
 
   &::after {
     content: "";

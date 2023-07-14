@@ -2,7 +2,7 @@
   <div class="container">
     <div class="stage__wrapper">
       <div class="stage__content">
-        <span class="stage__step">2 ступень</span>
+        <p class="stage__step">2 ступень</p>
         <h2 class="stage__title title">Как работает обучение до трудоустройства?</h2>
         <p class="stage__descr descr">В видео рассказываем, как проходит обучение на второй ступени, про возможности,
           которые открываются, а также про нашу систему подачи информации, благодаря которой мы обучаем сфере разработки
@@ -11,13 +11,15 @@
         <p class="stage__text">Подробнее можно узнать в видео</p>
       </div>
       <div class="stage__video video-block">
-        <button class="video-block__play btn-reset" aria-label="Play Video">
+        <button class="video-block__play btn-reset" type="button" aria-describedby="video-description-stage-2"
+          aria-label="Воспроизвести видео">
           <svg>
             <use xlink:href="img/sprite.svg#play"></use>
           </svg>
         </button>
         <video class="video-block__content" src="video-stage.webm" muted loop preload="metadata" width="555"
           height="382"></video>
+        <p class="visually-hidden" id="video-description-stage-2">Человек печатает на клавиатуре</p>
       </div>
     </div>
     <div class="stage__apply apply">
@@ -25,11 +27,13 @@
       <form class="apply__form">
         <p class="apply__descr">Оставь заявку на консультацию, где ты сможешь задать все интересующие тебя вопросы
           касаемо нашего обучения</p>
-        <label class="apply__label">
-          <input class="apply__input input-reset input-name" type="text" name="name" placeholder="Твое имя">
+        <label class="apply__label" for="input-name-stage2" aria-label="Введите ваше имя">
+          <input class="apply__input input-reset input-name" id="input-name-stage2" type="text" name="name"
+            placeholder="Твое имя" required aria-required="true" aria-label="Поле для ввода вашего имени">
         </label>
-        <label class="apply__label">
-          <input class="apply__input input-reset input-tel" type="tel" name="phone" placeholder="Телефон">
+        <label class="apply__label" for="input-tel-stage2" aria-label="Введите ваш телефон">
+          <input class="apply__input input-reset input-tel" id="input-tel-stage2" type="tel" name="phone" placeholder="Телефон"
+            required aria-required="true" aria-label="Поле для ввода вашего номера телефона">
         </label>
         <div class="apply__contact">
           <button class="apply__btn btn btn-reset" type="submit" aria-label="Отправить заявку">Отправить</button>
@@ -44,8 +48,9 @@
           </div>
         </div>
         <div class="apply__terms">
-          <label class="apply__label custom-checkbox">
-            <input class="custom-checkbox__input" type="checkbox">
+          <label class="apply__label custom-checkbox" for="input-checkbox-stage2" aria-label="Нажмите для принятий условий">
+            <input class="custom-checkbox__input" id="input-checkbox-stage2" required aria-required="true"
+              aria-label="Нажимая на кнопку, вы соглашаетесь с условиями передачи информации." type="checkbox">
             <span class="custom-checkbox__text">Я принимаю условия передачи информации</span>
           </label>
         </div>
