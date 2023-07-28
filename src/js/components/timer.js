@@ -1,5 +1,5 @@
 function updateTimerElements(container) {
-  const newYear = new Date('Aug 1 2023 00:00:00');
+  const newYear = new Date('Aug 1 2024 00:00:00');
 
   const daysVal = container.querySelector('.timer__item-day .timer__value');
   const hoursVal = container.querySelector('.timer__item-hrs .timer__value');

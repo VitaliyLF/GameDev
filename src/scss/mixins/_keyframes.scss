@@ -10,6 +10,14 @@
   }
 }
 
+@mixin separator {
+  @keyframes separator {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
 @mixin arm {
   @keyframes arm {
     0%,

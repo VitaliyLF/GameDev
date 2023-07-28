@@ -30,6 +30,12 @@
     flex-direction: column;
   }
 
+  &__separator {
+    @include separator;
+
+    animation: separator 2s infinite;
+  }
+
   &__value {
     @include mobile {
       font-size: 64px;
