@@ -19,6 +19,14 @@ const rules1 = [{
       value: true,
       errorMessage: 'Заполните телефон!'
     }]
+  },
+  {
+    ruleSelector: '.input-check',
+    rules: [{
+      rule: 'required',
+      value: true,
+      errorMessage: 'Поставьте галочку!'
+    }]
   }
 ];
 
@@ -38,6 +46,14 @@ const rules2 = [{
       rule: 'required',
       value: true,
       errorMessage: 'Заполните телефон!'
+    }]
+  },
+  {
+    ruleSelector: '.input-check',
+    rules: [{
+      rule: 'required',
+      value: true,
+      errorMessage: 'Поставьте галочку!'
     }]
   }
 ];
@@ -61,6 +77,8 @@ const rules3 = [{
     }]
   }
 ];
+
+
 
 
 const afterForm = () => {

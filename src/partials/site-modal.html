@@ -29,14 +29,15 @@
       </div>
       <div class="site-modal__apply apply">
         <form class="apply__form">
-          <label class="apply__label">
-            <input class="apply__input input-reset input-name" type="text" name="name" placeholder="Твое имя">
+          <label class="apply__label" for="input-name-steps1" aria-label="Введите ваше имя">
+            <input class="apply__input input-reset input-name" id="input-name-steps1" type="text" name="name"
+              placeholder="Твое имя" aria-required="true" aria-label="Поле для ввода вашего имени">
           </label>
-          <label class="apply__label">
-            <input class="apply__input input-reset input-tel" type="tel" name="phone" placeholder="Телефон">
+          <label class="apply__label" for="input-tel-steps1" aria-label="Введите ваш телефон">
+            <input class="apply__input input-reset input-tel" id="input-tel-steps1" type="tel" name="phone"
+              placeholder="Телефон" aria-required="true" aria-label="Поле для ввода вашего номера телефона">
           </label>
-          <button class="apply__btn btn btn-reset" type="submit" aria-label="записаться на консультацию">записаться на
-            консультацию</button>
+          <button class="apply__btn btn btn-reset" type="submit" aria-label="Отправить заявку">Отправить</button>
         </form>
       </div>
     </div>
