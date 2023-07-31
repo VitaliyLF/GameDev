@@ -23,6 +23,7 @@
     @include big-desktop {
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding-right: 15px;
     }
   }
@@ -46,6 +47,7 @@
 
     @include big-desktop {
       display: block;
+      width: 100%;
       margin-left: auto;
       transform: translateX(15px);
     }
