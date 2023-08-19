@@ -1,4 +1,4 @@
-# Обучение в IT сфере [(Ссылка на проект)](https://vetosy.github.io/GameDev/)
+# [Обучение в IT сфере](https://vetosy.github.io/GameDev/)
 
 <a href="https://vetosy.github.io/GameDev/"><img src="https://i.ibb.co/1nm9NKB/portfolio-1-2x.jpg" alt="portfolio-1-2x" border="0"  ></a>
 
