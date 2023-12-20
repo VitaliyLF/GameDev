@@ -1,24 +1,24 @@
 <div align="center">
 
-# [Обучение в IT сфере](https://vetosy.github.io/GameDev/)
+# [IT training](https://vetosy.github.io/GameDev/)
 
 <a href="https://vetosy.github.io/GameDev/"><img src="https://i.ibb.co/1nm9NKB/portfolio-1-2x.jpg" alt="portfolio-1-2x" border="0" target="_blank"  ></a>
 
-## 🛠 Что я использовал:
+## 🛠 What I used:
 <div style="margin-bottom: 10px;">
 HTML5
 </div>
 <div style="margin-bottom: 10px;">
-SCSS препроцессор
+SCSS
 </div>
 <div style="margin-bottom: 10px;">
 JS
 </div>
 <div style="margin-bottom: 10px;">
-БЭМ
+BEM
 </div>
 <div style="margin-bottom: 10px;">
-Gulp сборка
+Gulp
 </div>
 <div style="margin-bottom: 10px;">
 Figma
@@ -33,36 +33,36 @@ SEO
 
 [![My Skills](https://skillicons.dev/icons?i=html,scss,js,svg,gulp,figma)](https://skillicons.dev)
 
-## :clipboard: Что я реализовал:
+## :clipboard: What I realized:
 <div style="margin-bottom: 10px;">
 Pixel Perfect
 </div>
 <div style="margin-bottom: 10px;">
-Валидация формы
+Form validation
 </div>
 <div style="margin-bottom: 10px;">
-Зеленая зона Google Lighthouse
+Green area Google Lighthouse
 </div>
 <div style="margin-bottom: 10px;">
-Зеленая зона The W3C Markup Validation
+Green area The W3C Markup Validation
 </div>
 <div style="margin-bottom: 10px;">
-Аккордеон
+Accordion
 </div>
 <div style="margin-bottom: 10px;">
-Модульность по компонентам
+Modularity by component
 </div>
 <div style="margin-bottom: 10px;">
-Модальные окна
+Modal windows
 </div>
 <div style="margin-bottom: 10px;">
-Таймер
+Timer
 </div>
 <div style="margin-bottom: 10px;">
-Анимация
+Animation
 </div>
 <div style="margin-bottom: 10px;">
-Декоративные элементы
+Decorative elements
 </div>
 
 </div>  
