@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # [IT training](https://vetosy.github.io/GameDev/)
 
@@ -65,4 +65,3 @@ Animation
 Decorative elements
 </div>
 
-</div>  
