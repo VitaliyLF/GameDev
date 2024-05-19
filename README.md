@@ -2,7 +2,7 @@
 
 # [IT training](https://vetosy.github.io/GameDev/)
 
-<a href="https://vetosy.github.io/GameDev/"><img src="https://i.ibb.co/1nm9NKB/portfolio-1-2x.jpg" alt="portfolio-1-2x" border="0" target="_blank"  ></a>
+
 
 ## 🛠 What I used:
 <div style="margin-bottom: 10px;">
